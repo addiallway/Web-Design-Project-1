@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Workout Tracker</title>
+    </head>
+    <body>
+        <header>
+        <h1>Workout Tracker</h1>
+        <p>Record your workouts so you can track your progress.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#log-workout">Log a workout</a></li>
+        <li><a href="#resources">Workout resources</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="log-workout">
+        <h2>Log a workout</h2>
+
+        <figure>
+          <img src="workout.jpeg" alt="Person on workout equipment">
+          <figcaption>Use this form to record the details of your workout.</figcaption>
+        </figure>
+
+        <form>
+          <fieldset>
+            <legend>Workout details</legend>
+
+            <p>
+              <label for="workout-date">Date</label>
+              <input type="date" id="workout-date" name="workout-date">
+            </p>
+
+            <p>
+              <label for="workout-type">Type of workout</label>
+              <select id="workout-type" name="workout-type">
+                <option value="cardio">Cardio</option>
+                <option value="strength">Strength training</option>
+                <option value="flexibility">Flexibility</option>
+                <option value="sports">Sports</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="duration">Duration in minutes</label>
+              <input type="number" id="duration" name="duration">
+            </p>
+
+            <p>
+              <label for="notes">Workout notes</label>
+              <textarea id="notes" name="notes" rows="4" cols="30"></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Save workout</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="resources">
+        <h2>Workout resources</h2>
+        <p>
+          <a href="https://www.cdc.gov/physicalactivity/basics/index.htm">Read physical activity guidelines from the CDC</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Workout Tracker | Web Design Class | 2026</p>
+    </footer>
+  </body>
+</html>
